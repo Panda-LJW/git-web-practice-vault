@@ -4,6 +4,7 @@ const tasks = [
   "把按钮颜色换成你喜欢的颜色，再提交一次。",
   "新增一个列表，写下你想掌握的 3 个 Git 指令。",
   "在 script.js 里再加一个任务文案，然后提交一次。",
+  "bibilabu ",
 ];
 
 const taskButton = document.querySelector("#taskButton");
