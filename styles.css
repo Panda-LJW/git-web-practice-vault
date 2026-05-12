@@ -20,7 +20,7 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   background:
     linear-gradient(135deg, rgba(13, 124, 102, 0.16), transparent 34%),
-    linear-gradient(315deg, rgba(242, 184, 75, 0.25), transparent 38%),
+    linear-gradient(315deg, rgba(116, 102, 76, 0.25), transparent 38%),
     var(--paper);
 }
 
