@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git + Web Basics Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="workspace">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">HTML / CSS / JavaScript</p>
+        <h1 id="page-title">Git 指令练习场</h1>
+        <p class="intro">
+          每次改一点网页，就练一次 Git：查看状态、暂存、提交、看历史。
+        </p>
+      </section>
+
+      <section class="panel" aria-labelledby="today-title">
+        <div>
+          <p class="label">Today's tiny mission</p>
+          <h2 id="today-title">给页面加一个你自己的小变化</h2>
+          <p>
+            可以改标题、换颜色、加一句介绍，或者点下面的按钮生成一个练习任务。
+          </p>
+        </div>
+        <button id="taskButton" type="button">换一个任务</button>
+      </section>
+
+      <section class="task-card" aria-live="polite">
+        <p class="label">Next commit idea</p>
+        <p id="taskText">把这个页面标题改成你的名字，然后提交一次。</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
