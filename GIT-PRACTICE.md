@@ -127,6 +127,25 @@ git merge practice/merge-demo
 git log --oneline --graph --decorate
 ```
 
+## 第 8 轮：练 stash
+
+`stash` 用来临时收起改到一半的内容，不算正式提交。
+
+```bash
+git status
+git stash
+git status
+git stash pop
+git status
+```
+
+记法：
+
+```text
+stash = 先藏起来
+stash pop = 拿回来
+```
+
 ## 常用指令小抄
 
 ```bash
@@ -141,13 +160,14 @@ git restore 文件名   # 放弃某个文件尚未暂存的修改
 git restore --staged 文件名 # 取消暂存
 git branch          # 查看分支
 git branch -m 新名字 # 修改当前分支名称
-git switch 分支名 # 切换到已有分支（NEW）
-git switch -c 分支名 # 创建并切换到新分支（NEW）
+git switch 分支名   # 切换到已有分支
+git switch -c 分支名 # 创建并切换到新分支
 git merge 分支名     # 把某个分支合并到当前分支
-
-git checkout 分支名  # 切换到已有分支
-git checkout -b 分支名 # 创建并切换到新分支
-
+git stash           # 临时收起当前修改
+git stash pop       # 把收起的修改拿回来
+git remote -v       # 查看远程仓库
+git push            # 推送到远程仓库
+git pull            # 拉取远程仓库最新代码
 ```
 
 ## 你当前终端里的短命令
