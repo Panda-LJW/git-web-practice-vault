@@ -2,6 +2,44 @@
 
 这个文件夹现在可以当作你的练习场：改 `index.html`、`styles.css`、`script.js`，再用 Git 记录每一步。
 
+## 常用指令小抄
+
+```bash
+git status          # 看当前有哪些变化
+git diff            # 看文件具体改了什么
+git diff --staged   # 看已经暂存、准备提交的变化
+git add 文件名       # 把某个文件放进暂存区
+git add .           # 暂存当前目录下所有变化
+git commit -m "..." # 创建一次提交
+git log --oneline   # 简洁查看提交历史
+git restore 文件名   # 放弃某个文件尚未暂存的修改
+git restore --staged 文件名 # 取消暂存
+git branch          # 查看分支
+git branch -m 新名字 # 修改当前分支名称
+git switch 分支名   # 切换到已有分支
+git switch -c 分支名 # 创建并切换到新分支
+git merge 分支名     # 把某个分支合并到当前分支
+git stash           # 临时收起当前修改
+git stash pop       # 把收起的修改拿回来
+git remote -v       # 查看远程仓库
+git push            # 推送到远程仓库
+git pull            # 拉取远程仓库最新代码
+```
+
+## 你当前终端里的短命令
+
+```bash
+gs  # git status
+gd  # git diff
+ga  # git add
+gc  # git commit
+gl  # git log --oneline --graph --decorate
+gb  # git branch
+gco # git checkout
+gcb # git checkout -b
+ll  # ls -la
+```
+
 ## 第 1 轮：初始化和第一次提交
 
 ```bash
@@ -146,42 +184,6 @@ stash = 先藏起来
 stash pop = 拿回来
 ```
 
-## 常用指令小抄
 
-```bash
-git status          # 看当前有哪些变化
-git diff            # 看文件具体改了什么
-git diff --staged   # 看已经暂存、准备提交的变化
-git add 文件名       # 把某个文件放进暂存区
-git add .           # 暂存当前目录下所有变化
-git commit -m "..." # 创建一次提交
-git log --oneline   # 简洁查看提交历史
-git restore 文件名   # 放弃某个文件尚未暂存的修改
-git restore --staged 文件名 # 取消暂存
-git branch          # 查看分支
-git branch -m 新名字 # 修改当前分支名称
-git switch 分支名   # 切换到已有分支
-git switch -c 分支名 # 创建并切换到新分支
-git merge 分支名     # 把某个分支合并到当前分支
-git stash           # 临时收起当前修改
-git stash pop       # 把收起的修改拿回来
-git remote -v       # 查看远程仓库
-git push            # 推送到远程仓库
-git pull            # 拉取远程仓库最新代码
-```
-
-## 你当前终端里的短命令
-
-```bash
-gs  # git status
-gd  # git diff
-ga  # git add
-gc  # git commit
-gl  # git log --oneline --graph --decorate
-gb  # git branch
-gco # git checkout
-gcb # git checkout -b
-ll  # ls -la
-```
 
 建议节奏：每次只改一个小点，然后提交一次。Git 学起来最舒服的方式就是“小步快跑”。
