@@ -2,6 +2,8 @@
 
 这个文件夹现在可以当作你的练习场：改 `index.html`、`styles.css`、`script.js`，再用 Git 记录每一步。
 
+前端冲刺路线见：`FRONTEND-CRASH-PLAN.md`。
+
 ## 常用指令小抄
 
 ```bash

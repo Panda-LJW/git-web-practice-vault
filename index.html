@@ -3,33 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git + Web Basics Lab</title>
+    <title>Hackathon Frontend Sprint</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="workspace">
       <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">HTML / CSS / JavaScript</p>
-        <h1 id="page-title">Git 呀</h1>
+        <p class="eyebrow">3-day sprint / product + frontend</p>
+        <h1 id="page-title">黑客松前端冲刺台</h1>
         <p class="intro">
-          每次改一点网页，就练一次 Git：查看状态、暂存、提交、看历史。
+          用三天把 Web 三件套、React、接口协作和 PR 流程串起来。目标不是学完所有前端，而是比赛时能上手改页面、接数据、讲清产品。
         </p>
+        <div class="hero-actions" aria-label="学习入口">
+          <a class="button primary" href="FRONTEND-CRASH-PLAN.md">看三天路线</a>
+          <a class="button secondary" href="react-demo/README.md">看 React 模板</a>
+        </div>
       </section>
 
-      <section class="panel" aria-labelledby="today-title">
+      <section class="grid-section" aria-labelledby="mission-title">
         <div>
-          <p class="label">Today's tiny mission</p>
-          <h2 id="today-title">给页面加一个你自己的小变化</h2>
+          <p class="label">MVP mindset</p>
+          <h2 id="mission-title">先让 Demo 跑起来</h2>
           <p>
-            可以改标题、换颜色、加一句介绍，或者点下面的按钮生成一个练习任务。
+            黑客松里最重要的是把核心路径做通：用户看到什么、点击什么、前端向后端要什么数据、最后怎么演示价值。
           </p>
         </div>
-        <button id="taskButton" type="button">换一个任务</button>
+        <div class="metric-board" aria-label="三天学习安排">
+          <div>
+            <strong>Day 1</strong>
+            <span>HTML / CSS / JS</span>
+          </div>
+          <div>
+            <strong>Day 2</strong>
+            <span>React components</span>
+          </div>
+          <div>
+            <strong>Day 3</strong>
+            <span>API + PR flow</span>
+          </div>
+        </div>
       </section>
 
-      <section class="task-card" aria-live="polite">
-        <p class="label">Next commit idea</p>
-        <p id="taskText">把这个页面标题改成你的名字，然后提交一次。</p>
+      <section class="feature-list" aria-labelledby="features-title">
+        <p class="label">What you will practice</p>
+        <h2 id="features-title">比赛前必须能做的四件事</h2>
+        <div class="cards">
+          <article>
+            <span>01</span>
+            <h3>拆页面</h3>
+            <p>把产品想法拆成标题、功能、按钮、状态和演示区域。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>写组件</h3>
+            <p>用 React 把页面拆成 Hero、FeatureList、DemoPanel、TeamSection。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>接接口</h3>
+            <p>先用 mock 数据开发，再用 fetch 换成真实 API。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>协作提交</h3>
+            <p>从 main 切分支，提交小改动，push 分支，发 PR。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="demo-panel" aria-labelledby="demo-title">
+        <div>
+          <p class="label">Tiny JS interaction</p>
+          <h2 id="demo-title">点击切换今日训练重点</h2>
+          <p id="focusText">Day 1：读懂结构，改出一个黑客松项目首页。</p>
+        </div>
+        <button id="focusButton" type="button">下一个重点</button>
       </section>
     </main>
 

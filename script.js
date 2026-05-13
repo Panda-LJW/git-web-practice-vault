@@ -1,17 +1,16 @@
-const tasks = [
-  "把页面标题改成你的名字，然后提交一次。",
-  "在 HTML 里新增一段自我介绍，并用 CSS 调整它的样式。",
-  "把按钮颜色换成你喜欢的颜色，再提交一次。",
-  "新增一个列表，写下你想掌握的 3 个 Git 指令。",
-  "在 script.js 里再加一个任务文案，然后提交一次。",
+const focusItems = [
+  "Day 1：读懂结构，改出一个黑客松项目首页。",
+  "Day 2：用 React 把页面拆成组件，并用 state 做交互。",
+  "Day 3：用 mock 数据模拟接口，再练一次分支、push 和 PR。",
+  "比赛当天：先跑通核心 Demo，再做视觉和演示包装。",
 ];
 
-const taskButton = document.querySelector("#taskButton");
-const taskText = document.querySelector("#taskText");
+const focusButton = document.querySelector("#focusButton");
+const focusText = document.querySelector("#focusText");
 
-let currentTaskIndex = 0;
+let currentFocusIndex = 0;
 
-taskButton.addEventListener("click", () => {
-  currentTaskIndex = (currentTaskIndex + 1) % tasks.length;
-  taskText.textContent = tasks[currentTaskIndex];
+focusButton.addEventListener("click", () => {
+  currentFocusIndex = (currentFocusIndex + 1) % focusItems.length;
+  focusText.textContent = focusItems[currentFocusIndex];
 });
