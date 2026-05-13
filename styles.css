@@ -98,7 +98,7 @@ h3 {
 button {
   min-height: 46px;
   border: 0;
-  border-radius: 6px;
+  border-radius: 999px;
   font: 700 0.95rem "Trebuchet MS", Verdana, sans-serif;
   cursor: pointer;
   transition:
